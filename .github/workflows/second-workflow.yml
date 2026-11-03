@@ -1,12 +1,10 @@
-name: Second- Workflow
-on:
-  push:
-  workflow_dispatch:
+name: Second Workflow
+on: workflow_dispatch:
 jobs:
   hello-job:
     runs-on: ubuntu-latest
     steps:
-      - name: "wekcome"
+      - name: "welcome"
         run: echo "welcome first workflow "
   bye-job:
     runs-on: ubuntu-latest
