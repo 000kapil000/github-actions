@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: validate js code
-        run: test -f script.js
+        run: node --check script.js
 
       - name: validate html code
-        run: node --check index.html
+        run: npx htmlhint index.html
